@@ -80,7 +80,7 @@ var linkPropsPlusWnd = {
 			this.parentTab = top.gBrowser && top.gBrowser.selectedTab;
 			window.addEventListener("popstate", this, false);
 		}
-		this.(this.autostart);
+		this.uriChanged(this.autostart);
 		this.setClickSelectsAll();
 		this.addTabIcon();
 		!this.inTab && window.addEventListener("resize", this, false);
