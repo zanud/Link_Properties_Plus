@@ -41,8 +41,7 @@ function handleTwisty(btn, multiple) {
 	toggleTwisty(btn, show);
 	if(multiple) {
 		var twisties = document.getElementsByTagName("button");
-		for(var i = 0, l = twisties.length; i < l; ++i) {
-			var twisty = twisties[i];
+		for(var twisty of twisties) {
 			if(isTwisty(twisty) && twisty != btn)
 				toggleTwisty(twisty, show);
 		}
