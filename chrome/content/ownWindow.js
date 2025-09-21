@@ -245,7 +245,7 @@ var linkPropsPlusWnd = {
 	},
 	get titleFileName() {
 		var uri = this.svc.directURI || this.svc.requestURI || this.uri;
-		if(!uri || !this.svc.isValidURI(uri))
+		if(!(uri && this.svc.isValidURI(uri)))
 			return "";
 		var crop = this.pu.get("ownWindow.cropFileNameInTitle");
 		if(crop <= 0)
