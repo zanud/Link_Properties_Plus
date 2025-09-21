@@ -80,7 +80,7 @@ var linkPropsPlusWnd = {
 			this.parentTab = top.gBrowser && top.gBrowser.selectedTab;
 			window.addEventListener("popstate", this, false);
 		}
-		this.uriChanged(this.autostart);
+		this.(this.autostart);
 		this.setClickSelectsAll();
 		this.addTabIcon();
 		!this.inTab && window.addEventListener("resize", this, false);
@@ -370,13 +370,13 @@ var linkPropsPlusWnd = {
 	uriChanged: function(cantGet) {
 		var uri = this.uri;
 		this.cantGet = cantGet || this.svc.activeRequest || !uri;
-		var notHttp = "" + !/^https?:\//i.test(uri);
+		var notHttp = (!/^https?:\//i.test(uri)).toString();
 		var tbr = this.tbReferer;
 		if(tbr.getAttribute("lpp_notUsed") != notHttp) {
 			tbr.setAttribute("lpp_notUsed", notHttp);
 			tbr.previousSibling.setAttribute("lpp_notUsed", notHttp);
 		}
-		var empty = "" + !uri;
+		var empty = (!uri).toString();
 		var tbu = this.tbUri;
 		if(tbu.getAttribute("lpp_empty") != empty) {
 			tbu.setAttribute("lpp_empty", empty);
