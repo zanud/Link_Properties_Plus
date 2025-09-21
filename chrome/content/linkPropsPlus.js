@@ -1646,8 +1646,7 @@ var linkPropsPlusSvc = {
 		},
 		updateTooltips: function() {
 			var nodes = this.field.getElementsByTagName("span");
-			for(var i = 0, l = nodes.length; i < l; ++i) {
-				var node = nodes[i];
+			for(var node of nodes) {
 				var ttl = node.title || node.getAttribute("lpp_title");
 				if(!ttl)
 					continue;
