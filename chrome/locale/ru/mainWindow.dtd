@@ -1,7 +1,7 @@
 <!ENTITY linkPropsPlus.context "Свойства ссылки">
 <!ENTITY linkPropsPlus.contextFor "Свойства ссылки $S">
-<!ENTITY linkPropsPlus.contextAccesskey "й">
+<!ENTITY linkPropsPlus.contextAccesskey "л">
 <!ENTITY linkPropsPlus.tools "Свойства ссылки…">
-<!ENTITY linkPropsPlus.toolsAccesskey "й">
+<!ENTITY linkPropsPlus.toolsAccesskey "л">
 <!ENTITY linkPropsPlus.toolbar "Свойства ссылки">
 <!ENTITY linkPropsPlus.toolbarTooltip "Открыть окно для получения свойств ссылки (вы также можете перетащить сюда любую ссылку)">
